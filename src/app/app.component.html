@@ -7,17 +7,17 @@
 
 <div>
   <label>Use Letters</label>
-  <input type="checkbox" />
+  <input (change)="onLettersToggle()" type="checkbox" />
 </div>
 
 <div>
   <label>Use Numbers</label>
-  <input type="checkbox" />
+  <input (change)="onNumbersToggle()" type="checkbox" />
 </div>
 
 <div>
   <label>Use Symbols</label>
-  <input type="checkbox" />
+  <input (change)="onSymbolsToggle()" type="checkbox" />
 </div>
 
 <div>
@@ -26,5 +26,5 @@
 
 <div>
   <label>Your Password</label>
-  <input />
+  <input [value]="password" />
 </div>

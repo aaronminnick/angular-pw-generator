@@ -7,7 +7,25 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  includeLetters = false;
+  includeNumbers = false;
+  includeSymbols = false;
+  password = '';
+
+  onLettersToggle() {
+    this.includeLetters = !this.includeLetters;
+  }
+
+  onNumbersToggle() {
+    this.includeNumbers = !this.includeNumbers;
+  }
+
+  onSymbolsToggle() {
+    this.includeSymbols = !this.includeSymbols;
+  }
+
   onButtonClick() {
-    console.log('Button was clicked');
+    console.log(this);
+    this.password = 'password';
   }
 }
